@@ -685,3 +685,10 @@ button#submit-button:hover {
   width: 100%;
   min-height: 100%;
 }
+/* IMAGE RESPONSIVE */
+
+.responsive {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+}
