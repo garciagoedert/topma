@@ -692,3 +692,12 @@ button#submit-button:hover {
   height: auto;
   max-width: 1000px;
 }
+
+/* TEXTO DE FUNDO VERDE */
+
+textohero {
+  background-color: rgb(46, 195, 51);
+  color: gold;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif
+}
