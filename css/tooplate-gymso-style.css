@@ -747,4 +747,45 @@ textohero {
   scale: 1;
 }
 
+/* BUTTON INTENSIVO */
+
+.custom-btnitensivo {
+  background: transparent;
+  border-radius: var(--border-radius-small);
+  padding: 14px 24px;
+  color: white;
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.custom-btnintensivo:hover {
+  color: white;
+}
+
+.custom-btnintensivofocus {
+  box-shadow: none;
+}
+
+.custom-btnintensivo.bordered:hover,
+.custom-btnintensivo.bordered:focus,
+.custom-btnintensivo.bg-color:hover,
+.custom-btnintensivo.bg-color:focus {
+  background: white;
+  border-color: transparent;
+  color: white;
+}
+
+.borderedintensivo {
+  border: 1px solid white;
+  color: white;
+}
+
+.bg-colorintensivo {
+  background: black;
+  color: white;
+} 
 
