@@ -1,35 +1,45 @@
 body {
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
-}
-
-.container {
+    font-family: sans-serif;
+  }
+  
+  .container {
     width: 500px;
     margin: 0 auto;
-}
-
-h1 {
-    text-align: center;
-    font-size: 24px;
-}
-
-form {
+  }
+  
+  .alunos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .alunos li {
+    margin-bottom: 10px;
+  }
+  
+  .form {
     margin-top: 20px;
-}
-
-input {
-    width: 100%;
+  }
+  
+  input {
+    width: 200px;
+    height: 30px;
     padding: 10px;
     border: 1px solid #ccc;
-}
-
-input[type="submit"] {
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
-    background-color: #008cba;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.contagem {
-    margin-top: 20px;
-}
+  }
+  .remover {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+  
