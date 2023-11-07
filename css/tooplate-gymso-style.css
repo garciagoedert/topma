@@ -289,7 +289,7 @@ a:focus {
 
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
-  color: var(--primary-color);
+  color: red;
 }
 
 .navbar .social-icon li a {
@@ -304,6 +304,7 @@ a:focus {
   width: 30px;
   height: 35px;
   outline: none;
+  color: red;
 }
 
 .navbar-toggler:focus {
@@ -332,7 +333,7 @@ a:focus {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--primary-color);
+  background: red;
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -368,7 +369,7 @@ a:focus {
   -----------------------------------------*/
 
 .hero {
-  background-image: url("../images/cleiton.jpg");
+  background-image: url("../images/karate.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
