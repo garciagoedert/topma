@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-   
+    
     
 <link rel="icon" type="image/x-icon" href="/images/favicon.png">
      <title>TOP Martial Arts</title>
@@ -17,6 +16,13 @@
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
      <link rel="stylesheet" href="css/aos.css">
+	 <link rel="stylesheet" href="/css/modal.css">
+	 <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+	 <script src="/js/modal.js"></script>
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-gymso-style.css">
@@ -26,58 +32,2564 @@ https://www.tooplate.com/view/2119-gymso-fitness
 -->
 </head>
 
-<!-- scripts -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/custom.js"></script>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+<link rel="stylesheet" href="/ranking.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/tooplate-gymso-style.css">
 
-<!-- MENU BAR -->
 <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
+	<div class="container">
 
-        <img src="/images/logotop.png" alt="logo" width="70" height="45">
-        <a class="navbar-brand" href="index.html" > &nbsp; </a>
+		<img src="/images/logotop.png" alt="logo" width="70" height="45">
+		<!-- <a class="navbar-brand" href="index.html" > &nbsp; TOP</a> -->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-lg-auto">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link smoothScroll">Home</a>
-                </li>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-lg-auto">
+				<li class="nav-item">
+					<a href="/index.html" class="nav-link smoothScroll">Home</a>
+				</li>
 
-                <li class="nav-item">
-                    <a href="#about" class="nav-link smoothScroll">Quem somos</a>
-                </li>
+				<li class="nav-item">
+					<a href="/index.html" class="nav-link smoothScroll">Quem somos</a>
+				</li>
 
-                <!-- <li class="nav-item">
-                    <a href="#class" class="nav-link smoothScroll">Classes</a>
-                </li> -->
+				<!-- <li class="nav-item">
+					<a href="#class" class="nav-link smoothScroll">Classes</a>
+				</li> -->
 
-                <li class="nav-item">
-                    <a href="#schedule" class="nav-link smoothScroll">Agenda</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://topmartialarts.nlojas.com/" class="nav-link smoothScroll">TOP Store</a>
-                </li>
+				<li class="nav-item">
+					<a href="/index.html" class="nav-link smoothScroll">Agenda</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://topmartialarts.nlojas.com/" class="nav-link smoothScroll">TOP Store</a>
+				</li>
 
-                <li class="nav-item">
-                    <a href="https://wa.me/554896532619" class="nav-link smoothScroll">Contato</a>
-                </li>
-               
-            </ul>
+				<li class="nav-item">
+					<a href="https://wa.me/554896532619" class="nav-link smoothScroll">Contato</a>
+				</li>
+			   
+			</ul>
 
-            <ul class="social-icon ml-lg-3">
-                <!-- <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li> -->
-                <!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
-                <li><a href="https://www.instagram.com/topmartialarts/" class="fa fa-instagram"></a></li>
-            </ul>
-        </div>
+			<ul class="social-icon ml-lg-3">
+				<!-- <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li> -->
+				<!-- <li><a href="#" class="fa fa-twitter"></a></li> -->
+				<li><a href="https://www.instagram.com/topmartialarts/" class="fa fa-instagram"></a></li>
+			</ul>
+		</div>
 
-    </div>
+	</div>
 </nav>
+
+
+    <div class="container">
+		<br>
+		<br>
+		<br>
+			<header>
+				<br>
+				<br>
+				<br>
+				<br>
+        <h1>Indicados ao exame de faixa</h1>
+		<h3>2 de Setembro</h3>
+		<br>
+		
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nome do aluno..." title="Type in a name">
+
+	
+			
+		<!--  search -->
+			</header>
+			
+			<div class="wrapper">
+				<table  class="table table-condensed table-bordered table-hover" id="myTable">
+					<thead class="th0">
+						
+						<tr>
+							<!-- <th>Ranking</th> -->
+							<th>Aluno</th>
+							<!-- <th>Próxima faixa</th> -->
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+            <!-- FAIXAS BRANCA -->
+			
+						<tr>
+                
+                <td class="team">Sr. Antônio F. Nóbrega
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+					<p>Local: TOP Centro
+					</p></a>
+					<p>Horário:11h</p>
+				</td>
+                <!-- <td class="points">Branca decidida</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+					  <tr>
+                
+                <td class="team">Srta. Cecília F. Nóbrega
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário:11h</p>
+				</td>
+                <!-- <td class="points">Branca decidida</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+              
+              </tr>
+			  <tr>
+                
+				<td class="team">Srta. Júlia Soares Lucas
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu"></a>
+					<p>Local: TOP Centro
+					</p>
+					<p>Horário: 14h</p>
+				</td>
+				<!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+				
+			  </tr>
+            	 <tr>
+               
+                <td class="team">Srta. Amanda Zanelatto
+					
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+					<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points">Branca decidida</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+               
+              </tr>
+
+              <tr>
+                
+                <td class="team">Sr. Francisco Serratine
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points">Branca decidida</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Henrique Menegaz
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Marcella Manozzo
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Francisco Schuster
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Francisco Silveira
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. João M. Ferreira
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Ignácio Vicione
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  
+
+			  
+			  <!-- FAIXA LARANJA -->
+
+			  <!-- <div class="wrapper"> -->
+				<!-- <table  class="table table-condensed table-bordered table-hover" id="myTable"> -->
+					<thead class="th1">
+						<tr>
+							<!-- <th>Ranking</th> -->
+							<th>Aluno</th>
+							<!-- <th>Próxima faixa</th> -->
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+			  <tr>
+                
+                <td class="team">Srta. Emanuela Serratine
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. André Balsanelli
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h </p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Giovanna Balsanelli
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Pietra Alves
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+						
+					<p>Horário: 15h</p>
+				</td>
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+				<tr>
+                
+					<td style="color: green;" class="team">Sra. Gisele Dias
+						<p>Local: TOP Centro
+						</p>
+						<p>Horário: 14h</p>
+					</td>
+					<!-- <td class="points"></td> -->
+					<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+					<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+					
+				  </tr>
+                <!-- <td class="points">Laranja decidida</td> -->
+				<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Joaquim Nawa
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points">Laranja decidida</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Benjamin Schultz
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 17h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Fernando Schultz
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 17h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Davi Belarmino
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 16h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Tiago Monteiro
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Martin Lovato
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 10h30</p>
+				</td>
+                <!-- <td class="points">YONG Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Emanuela Serratine
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Jonnah Nascimento
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Cleiton Bittencourt
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points">Laranja</td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Marcelo F. da Silva
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Dandara Modesti
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Amanda Raymundo
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário 14h:</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  
+			 
+                
+             
+			 
+			  <tr>
+                
+                <td class="team">Sr. Guilherme De Genova
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 10h30</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			
+			 
+			  <tr>
+                
+                <td class="team">Sr. Levi Migliorini
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+               
+			  <tr>
+                
+                <td class="team">Sr. Matheus de Oliveira
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Milene Ikino
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Sofia de Souza Adam
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 10h30</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Tiago Schultz
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 10h30</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Giovanna Torneri
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 16h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Leo da Costa
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 16h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Alice da Costa
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 16h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Marcelo Amorim
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 10h30</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  
+			  <tr>
+                
+                <td class="team">Sr. Antônio Machado
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Caio Augusto da Costa
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Christie Schweitzer
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 17h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Emanuel Ibrahim
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Felipe Soares
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 17h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Guilherme Danvario
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 17h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Joaquim Schafer
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Noah Tanaka
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Rafael Luciano
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Théo Benitti
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 15h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Ana Clara Martins
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Caue Carqueijo
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 16h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Daniel Nacib
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Davi Basso
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 16h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Eduardo Leite
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 10h30</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Gabriel Borges
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 14h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Henrique Di Vizio
+					<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+						<p>Local: TOP Santa Monica</p></a>
+					<p>Horário: 10h30</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Maya Carvalho
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 10h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Pedro Martins
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Sr. Frederico Schafer
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 11h</p>
+				</td>
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  <tr>
+                
+                <td class="team">Srta. Manuella Kotani
+					<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+						<p>Local: TOP Centro
+						</p></a>
+					<p>Horário: 15h</p>
+				</td>
+				
+				
+                <!-- <td class="points"></td> -->
+				<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+                
+              </tr>
+			  
+			  
+			  <!-- </tbody>
+			  </table> -->
+            	
+			  <!-- FAIXA AMARELA -->
+			 
+				<!-- <div class="wrapper"> -->
+					<!-- <table  class="table table-condensed table-bordered table-hover" id="myTable"> -->
+						<thead class="th0">
+							
+					<thead class="th2">
+						<tr>
+							<!-- <th>Ranking</th> -->
+							<th>Aluno</th>
+							<!-- <th>Próxima faixa</th> -->
+							<th></th>
+						</tr>
+					</thead>
+					<tr>
+                
+						<td class="team">Srta. Cecília Bertol
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 10h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Helton Bertol
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 10h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Srta. Miriam Moretti
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 11h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Tiago Moretti
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 11h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Arthur Machado
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 11h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Henrique Muller
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Srta. Sofia Ribeiro
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Bernardo Silveira
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Henrique Hayashi
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Joaquim Hayashi
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Rafael Antunes
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 17h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Rafael Soares
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 17h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Srta. Lara D'elboux
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 17h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					 
+					  <tr>
+                
+						<td class="team">Sr. Davi Torneri
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Enrico Vecchia
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Gustavo Heidemann
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Heitor Martins
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. João Vieira
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Koji Abreu
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Leonardo Meyer
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Luca Depizzolatti
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Luciano Bortoloto
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Srta. Maria Catharina Silva
+							</p>
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Bernardo de Bem
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Vitor Justino
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td style="color: green;" class="team">Sr. Rafael Pelisser
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+						<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Theo Strieder Gomes
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Mateus Espindola
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td style="color: green;" class="team">Sr. Jorge de Sá
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+						<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Antonio Tonello
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Caio Miranda
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Gabriel Ribeiro
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Henrique Werle
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td style="color: green;" class="team">Sr. Ícaro Simões
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+						<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Leonardo Orkiel
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Srta. Nohemia Xavier
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Pedro Luz
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Henrique Vieira
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Luigi Correa
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					  <tr>
+                
+						<td class="team">Sr. Mateus Silveira
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					<tr>
+                
+						<td class="team">Srta. Alice Chryssovergis
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points"></td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>
+					<tr>
+                
+						<td class="team">Sr. Nicolas Kroth
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points">Amarela</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>  
+					  <tr>
+                
+						<td style="color: green;" class="team">Sr. Luan Rodrigues
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 15h</p></td>
+						<!-- <td class="points">Amarela</td> -->
+						<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+						
+					  </tr>        
+					  <tr>
+                
+						<td class="team">Srta. Cléo Alves
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points">Amarela decidida</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>   
+					  <tr>
+                
+						<td class="team">Srta. Carolina Diamantaras
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points">Amarela</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>  
+					  <tr>
+                
+						<td style="color: green;" class="team">Sr. Vilmar Júnior
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p></td>
+						<!-- <td class="points">Amarela</td> -->
+						<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+						<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg</td>
+					  </tr>  
+					  <tr>
+                
+						<td class="team">Sr. Enzo Portella
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points">Amarela decidida</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>  
+					  <tr>
+                
+						<td class="team">Sr. Igor Pompei
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 14h</p>
+						</td>
+						<!-- <td class="points">Amarela</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>  
+					  <tr>
+                
+						<td class="team">Sr. Rafael Assis
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 15h</p>
+						</td>
+						<!-- <td class="points">Amarela decidida</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>  
+					  <tr>
+                
+						<td class="team">Sr. Luca Gil
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 11h15</p>
+						</td>
+						<!-- <td class="points">YONG Amarela</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>  
+					  <tr>
+                
+						<td class="team">Sr. Augusto Meyer
+							<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+								<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points">Amarela decidida</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>  
+					  <tr>
+                
+						<td class="team">Srta. Aurora Schultz
+							<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+								<p>Local: TOP Centro
+								</p></a>
+							<p>Horário: 16h</p>
+						</td>
+						<!-- <td class="points">YONG - Amarela</td> -->
+						<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+						
+					  </tr>  
+					
+					<!-- </tbody> -->
+					<!-- </table> -->
+					</div>
+					</div>
+					</a>
+					<!-- FAIXA CAMUFLADA -->
+					<!-- </table> -->
+					<!-- <div class="wrapper"> -->
+						<!-- <table> -->
+							<thead class="th3">
+								<tr>
+									<!-- <th>Ranking</th> -->
+									<th>Aluno</th>
+									<!-- <th>Próxima faixa</th> -->
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+                
+									<td class="team">Sr. Túlio Bertol
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 10h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								  <tr>
+                
+									<td style="color: green;" class="team">Sr. Lorenzo Gasparetto
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 10h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+									<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+								  </tr>
+								  <tr>
+                
+									<td class="team">Sr. Matias Elias
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 11h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								  <tr>
+                
+									<td class="team">Srta. Viviane Borges
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 14h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								  <tr>
+                
+									<td class="team">Sr. Mateus Soares
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 16h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								  <tr>
+                
+									<td class="team">Sr. João D'elboux
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 16h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								  <tr>
+                
+									<td class="team">Srta. Vitória Santiago
+										<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+											<p>Local: TOP Santa Monica</p></a>
+										<p>Horário: 14h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								  <tr>
+                
+									<td class="team">Srta. Helena Pinheiro
+										<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+											<p>Local: TOP Santa Monica</p></a>
+										<p>Horário: 15h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								  <tr>
+                
+									<td class="team">Srta. Linda da Costa
+										<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+											<p>Local: TOP Santa Monica</p></a>
+										<p>Horário: 16h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								  <tr>
+                
+									<td class="team">Sr. Caio Chacón
+										<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+											<p>Local: TOP Santa Monica</p></a>
+										<p>Horário: 14h</p>
+									</td>
+									<!-- <td class="points"></td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>
+								<tr>
+                
+									<td class="team">Sr. Daniel Yamada
+										<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+											<p>Local: TOP Santa Monica</p></a>
+										<p>Horário: 9h30</p>
+									</td>
+									<!-- <td class="points">Camuflada decidida</td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>  
+								  <tr>
+                
+									<td style="color: green;" class="team">Sra. Renata Santos
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 17h</p>
+									</td>
+									<!-- <td class="points">Camuflada</td> -->
+									<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+									<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg</td>
+								  </tr>  
+								  <tr>
+                
+									<td class="team">Sr. Esdras Camargos
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 17h</p>
+									</td>
+									<!-- <td class="points">Camuflada</td> -->
+									<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+									
+								  </tr>  
+								  <tr style="color: green;">
+                
+									<td class="team">Sr. Alefy Mikael
+										<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+											<p>Local: TOP Santa Monica</p></a>
+										<p>Horário: 14h</p>
+									</td>
+									<!-- <td class="points">Camuflada</td> -->
+									<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+									<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg</td>
+								  </tr>  
+								  <tr>
+                
+									<td style="color: green;" class="team">Srta. Lorena Nicolás
+										<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+											<p>Local: TOP Centro
+											</p></a>
+										<p>Horário: 16h</p>
+									</td>
+									<!-- <td class="points">YONG - Camuflada</td> -->
+									<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+									<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg</td>
+								  </tr>  
+								  </tbody>
+								  <!-- </table> -->
+								  </div>
+								  <!-- </table> -->
+								  </div>
+								  </div>
+								  
+								 
+								 
+								 
+ <!-- <div class="wrapper"> -->
+									<!-- <table> -->
+										<thead class="th4">
+											<tr>
+												<!-- <th>Ranking</th> -->
+												<th>Aluno</th>
+												<!-- <th>Próxima faixa</th> -->
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											
+											<tr>
+                
+												<td class="team">Sr. Miguel de Luca
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 10h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Srta. Indira Téllez
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 08h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Davi Minef
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 10h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Bernardo da Silva
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 09h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Rafael Zanini
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 09h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Srta. Isabella Basso
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 09h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Cauã Ventura
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 09h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Benjamin Mocelin
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 10h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Angelo Dal Bó 
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 10h30</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Marcio Arruda
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 17h</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Gustavo Brandi
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 16h</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Benjamin Arruda
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 16h</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Eduardo Antunes
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 16h</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Vinicius Cantarelli
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 14h</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Lorenzo Merge
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 14h</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td class="team">Sr. Lorenzo Wilkens
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 10h</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>
+											<tr>
+                
+												<td style="color: green;" class="team">Srta. Manuela Pasquali
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 10h</p>
+												</td>
+												<!-- <td class="points"></td> -->
+												<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+												<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+											  </tr>
+											<tr>
+                
+												<td class="team">Sra. Cristina Salim
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 15h</p>
+												</td>
+												<!-- <td class="points">Verde</td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>  
+											  <tr>
+                
+												<td class="team">Sr. Mateus Campos Dias
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 10h30</p>
+												</td>
+												<!-- <td class="points">YONG - Verde</td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>  
+											  <tr>
+                
+												<td class="team">Sr. Pedro Buarque
+													<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+														<p>Local: TOP Santa Monica</p></a>
+													<p>Horário: 09h30</p>
+												</td>
+												<!-- <td class="points">Verde decidida</td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>  
+											  <tr>
+                
+												<td class="team">Sr. Marcelo de Assis
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 15h</p>
+												</td>
+												<!-- <td class="points">Verde</td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>  
+											  <tr>
+                
+												<td class="team">Sra. Christiane Braga Neves
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 15h</p>
+												</td>
+												<!-- <td class="points">Verde</td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>  
+											  <tr>
+                
+												<td class="team">Srta. Isabela Camargos
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 16h</p>
+												</td>
+												<!-- <td class="points">YONG - Verde</td> -->
+												<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+												
+											  </tr>  
+											  <tr>
+                
+												<td style="color: green;" class="team">Sr. João Cardoso
+													<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+														<p>Local: TOP Centro
+														</p></a>
+													<p>Horário: 08h30</p>
+												</td>
+												<!-- <td class="points">Verde</td> -->
+												<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+												<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+												
+											  </tr>  
+											  <tr>
+												<thead class="th5">
+													<tr>
+														<!-- <th>Ranking</th> -->
+														<th>Aluno</th>
+														<!-- <th>Próxima faixa</th> -->
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+                
+														<td class="team">Sr. Guilherme Guglielmo
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 09h30</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Arthur Brito Israel
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 09h30</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Rafael Rosenthal
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 09h30</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Pedro Carraveta
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 09h30</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Pedro Cabral
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 11h15</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Lucas Haudsch
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 09h30</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Bruno Diez
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 09h30</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Srta. Paula Dutra
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 08h30</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Luiz D'elboux
+															<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																<p>Local: TOP Centro
+																</p></a>
+															<p>Horário: 17h</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Matheus Brandi
+															<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																<p>Local: TOP Centro
+																</p></a>
+															<p>Horário: 16h</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Marcelo de Castro
+															<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																<p>Local: TOP Centro
+																</p></a>
+															<p>Horário: 16h</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sra. Jéssica Takahashi
+															<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																<p>Local: TOP Centro
+																</p></a>
+															<p>Horário: 15h</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr> 
+													<tr>
+                
+														<td class="team">Sr. Eduardo Cantarelli
+															<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																<p>Local: TOP Centro
+																</p></a>
+															<p>Horário: 14h</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sra. Mariana Ribeiro
+															<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																<p>Local: TOP Centro
+																</p></a>
+															<p>Horário: 14h</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Sr. Marcelo Muller
+															<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																<p>Local: TOP Centro
+																</p></a>
+															<p>Horário: 14h</p>
+														</td>
+														<!-- <td class="points"></td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr>
+													<tr>
+                
+														<td class="team">Srta. Ellen Miranda
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 11h15</p>
+														</td>
+														<!-- <td class="points">YONG - Roxa</td> -->
+														<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+														
+													  </tr> 
+													  <tr>
+                
+														<td style="color: green;" class="team">Sr. Ronaldo Ramos
+															<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																<p>Local: TOP Santa Monica</p></a>
+															<p>Horário: 08h30</p>
+														</td>
+														<!-- <td class="points">Roxa</td> -->
+														<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+														<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+													  </tr> 
+													  <thead class="th6">
+														<tr>
+															<!-- <th>Ranking</th> -->
+															<th>Aluno</th>
+															<!-- <th>Próxima faixa</th> -->
+															<th></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+                
+															<td class="team">Sra. Sibeli de Andrade
+																<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																	<p>Local: TOP Santa Monica</p></a>
+																<p>Horário: 08h30</p>
+															</td>
+															<!-- <td class="points"></td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr>
+														<tr>
+                
+															<td class="team">Sr. Francisco Badalotti
+																<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																	<p>Local: TOP Santa Monica</p></a>
+																<p>Horário: 08h30</p>
+															</td>
+															<!-- <td class="points"></td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr>
+														<tr>
+                
+															<td class="team">Sr. João Henrique da Silva
+																<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																	<p>Local: TOP Santa Monica</p></a>
+																<p>Horário: 09h30</p>
+															</td>
+															<!-- <td class="points"></td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr>
+														<tr>
+                
+															<td class="team">Sr. Flávio Lanza
+																<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																	<p>Local: TOP Santa Monica</p></a>
+																<p>Horário: 08h30</p>
+															</td>
+															<!-- <td class="points"></td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr>
+														<tr>
+                
+															<td class="team">Sr. Alexandre Castro
+																<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																	<p>Local: TOP Centro
+																	</p></a>
+																<p>Horário: 17h</p>
+															</td>
+															<!-- <td class="points"></td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr>
+														<tr>
+                
+															<td class="team">Sra. Paula Veras
+																<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																	<p>Local: TOP Centro
+																	</p></a>
+																<p>Horário: 15h</p>
+															</td>
+															<!-- <td class="points"></td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr>
+														<tr>
+                
+															<td class="team">Sr. Vicente Wilkens
+																<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																	<p>Local: TOP Centro
+																	</p></a>
+																<p>Horário: 10h</p>
+															</td>
+															<!-- <td class="points"></td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr>
+														<tr>
+                
+															<td style="color: green;" class="team">Sr. Bruno Nicolás
+																<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																	<p>Local: TOP Centro
+																	</p></a>
+																<p>Horário: 17h</p>
+															</td>
+															<!-- <td class="points">Azul</td> -->
+															<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+															<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+														  </tr> 
+														  <tr>
+                
+															<td class="team">Sr. Arthur Valente
+																<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																	<p>Local: TOP Santa Monica</p></a>
+																<p>Horário: 09h30</p>
+															</td>
+															<!-- <td class="points">Azul</td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr> 
+														  <tr>
+                
+															<td class="team">Sr. Nicolas Moreira
+																<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																	<p>Local: TOP Santa Monica</p></a>
+							<p>Horário: 08h30</p>
+															</td>
+															<!-- <td class="points">Azul</td> -->
+															<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+															
+														  </tr> 
+														  <thead class="th7">
+															<tr>
+																<!-- <th>Ranking</th> -->
+																<th>Aluno</th>
+																<!-- <th>Próxima faixa</th> -->
+																<th></th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+                
+																<td class="team">Sr. Lucca Echegaray
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+								<p>Horário: 08h30</p>
+																</td>
+																<!-- <td class="points">Azul</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															<tr>
+                
+																<td style="color: green;" class="team">Sr. Matheus Sardá
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+								<p>Horário: 08h30</p>
+																</td>
+																<!-- <td class="points">Azul</td> -->
+																<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+																<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+															  </tr> 
+															<tr>
+                
+																<td class="team">Sr. Giórgio Avi
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+								<p>Horário: 11h15</p>
+																</td>
+																<!-- <td class="points">Azul</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															<tr>
+                
+																<td class="team">Sr. Kenzo Kotani
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+								<p>Horário: 15h</p>
+																</td>
+																<!-- <td class="points">Azul</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															<tr>
+                
+																<td class="team">Sr. Eric Takahashi
+																	<p>Local: TOP Centro
+								</p>
+								<p>Horário: 15h</p>
+																</td>
+																<!-- <td class="points">Azul</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															<tr>
+                
+																<td class="team">Sr. Vicente Ribeiro
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+								<p>Horário: 14h</p>
+																</td>
+																<!-- <td class="points">Azul</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															
+															<tr>
+                
+																<td class="team">Srta. Isadora Lonzetti
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+								<p>Horário: 10h</p>
+																</td>
+																<!-- <td class="points">Azul</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> <tr>
+                
+																<td style="color: green;" class="team">Srta. Alice Pasquali
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+								<p>Horário: 10h</p>
+																</td>
+																<!-- <td class="points">Azul</td> -->
+																<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+																<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+															  </tr> 
+														  <thead class="th8">
+															<tr>
+																<!-- <th>Ranking</th> -->
+																<th>Aluno</th>
+																<!-- <th>Próxima faixa</th> -->
+																<th></th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+                
+																<td class="team">Srta. Abigail Tagliari
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+																	<p>Horário: 08h30</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr>
+															<tr>
+                
+																<td class="team">Sr. William Silveira
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+																	<p>Horário: 14h</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr>
+															<tr>
+                
+																<td class="team">Sr. Augusto Waick
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+																	<p>Horário: 10h</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr>
+															<tr>
+                
+																<td class="team">Sr. Vitor Lonzetti
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+																	<p>Horário: 10h</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr>
+															<tr>
+                
+																<td style="color: green;" class="team">Srta. Giorgia Lauriano
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+																	<p>Horário: 10h</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+																<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+															  </tr>
+															<tr>
+                
+																<td class="team">Sr. Lucas Dutra
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+																	<p>Horário: 08h30</p>
+																</td>
+																<!-- <td class="points">Vermelha</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															  <thead class="th9">
+																<tr>
+																	<!-- <th>Ranking</th> -->
+																	<th>Aluno</th>
+																	<!-- <th>Próxima faixa</th> -->
+																	<th></th>
+																</tr>
+															</thead>
+															<tr>
+                
+																<td class="team">Sr. Vicente Pires
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+																	<p>Horário: 08h30</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr>
+															<tr>
+                
+																<td class="team">Sr. Stefan Wolkmer
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+																	<p>Horário: 08h30</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr>
+															<tr>
+                
+																<td   style="color: green;" class="team">Sr. Billy Souto Maior
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+																	<p>Horário: 08h30</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<!-- <td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td> -->
+																<td><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></td>
+															  </tr>
+															  <tr>
+                
+																<td class="team">Sr. Miguel Laranjeira
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+																	<p>Horário: 10h</p>
+																</td>
+																<!-- <td class="points">Vermelha e Preta</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															  <tr>
+                
+																<td class="team">Sr. Theo Barguil Gomes
+																	<p>Local: TOP Centro
+																	</p>
+																	<p>Horário: 08h</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr>
+															  <tr>
+			
+																<td class="team">Sr. Gustavo Nobre
+																	<a href="https://www.google.com/maps?ll=-27.589611,-48.508545&z=9&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5462112802846903319">
+																		<p>Local: TOP Santa Monica</p></a>
+																	<p>Horário: 08h30</p>
+																</td>
+																<!-- <td class="points">Vermelha e Preta</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															  <tr>
+			
+																<td class="team">Sr. Juliano Laranjeira
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+																	<p>Horário: 08h</p>
+																</td>
+																<!-- <td class="points">Vermelha e Preta</td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr> 
+															  <tr>
+                
+																<td class="team">Sr. Giovanni Matiuzzi
+																	<a href="https://www.google.com/maps/place/TOP+Martial+Arts/@-27.585943,-48.544291,9z/data=!4m6!3m5!1s0x952739274889f23d:0x9b5a1c3bb6a8bb8a!8m2!3d-27.5859431!4d-48.5442913!16s%2Fg%2F11rmy3l959?hl=pt-BR&entry=ttu">
+																		<p>Local: TOP Centro
+																		</p></a>
+																	<p>Horário: 08h</p>
+																</td>
+																<!-- <td class="points"></td> -->
+																<td><input type="button" name="button1" value="Inscreva-se" onClick="window.open('https://www.topma.com.br/examedefaixa.html')"></td>
+																
+															  </tr>
+
+															  <thead class="th9">
+																<tr>
+																	<!-- <th>Aluno</th> -->
+																	<th></th>
+																	<!-- <th>Próxima faixa</th> -->
+																	<th></th>
+																</tr>
+																
+															
+															</thead>
+															<br>
+															</tbody>
+															</tbody>
+															</tbody>
+															</tr>
+															</tbody>
+															</div>
+															</html>
+															</a>
+															</a>
+															</a>
+															</a>
+															</a>
+															</a>
+															</a>
+															</a>
+															</a>
+															</a>
+														</a>
+													</a>
+												</a>
+											</a>
+										</a>
+									</a>
+								</a>
+							</a>
+						</a>
+					</a>
+				</a>
+			</a>
+		</a>
+	</a>
+</a>
+															
+
+													  
+												
+				</div>
+				</table>
+			</div>
+		</div>
+
+
+		
